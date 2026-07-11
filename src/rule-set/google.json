@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "apidata.googleusercontent.com",
+        "cloud.google.com",
+        "console.cloud.google.com",
+        "dns-admin.google.com",
+        "generativelanguage.googleapis.com",
+        "google-analytics.com",
+        "google.com",
+        "googlehosted.l.googleusercontent.com",
+        "l.google.com",
+        "mobile-gtalk.l.google.com",
+        "mtalk.google.com",
+        "ns1.google.com",
+        "people.googleapis.com",
+        "play.google.com",
+        "play.googleapis.com",
+        "signaler-pa.clients6.google.com",
+        "www.google-analytics.com",
+        "www.google.com",
+        "www3.l.google.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".cloud.google.com",
+        ".google-analytics.com",
+        ".google.com",
+        ".googleapis.com",
+        ".googleusercontent.com"
+      ]
+    },
+    {
+      "domain_regex": [
+        ".*android.*",
+        ".*google.*"
+      ]
+    }
+  ]
+}
