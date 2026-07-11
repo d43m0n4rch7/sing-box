@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "jetbrains.ai",
+        "jetbrains.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".jetbrains.ai",
+        ".jetbrains.com"
+      ]
+    }
+  ]
+}
