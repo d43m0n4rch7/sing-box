@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": "youtube.com"
+    },
+    {
+      "domain_suffix": [
+        ".1e100.net",
+        ".googleusercontent.com",
+        ".googlevideo.com",
+        ".gstatic.com",
+        ".gvt1.com",
+        ".nhacmp3youtube.com",
+        ".youtu.be",
+        ".youtube.com",
+        ".ytimg.com"
+      ]
+    }
+  ]
+}
