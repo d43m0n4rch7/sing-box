@@ -1,0 +1,95 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sing-box"
+version = "1.1.0"
+description = "Subscription fetching and conversion, configuration generation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+authors = [{ name = "D43m0n4RcH7", email = "d43m0n4rch7@gmail.com" }]
+keywords = ["sing-box", "vless", "proxy", "bpf", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: Proxy Servers",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "pydantic>=2.13.4",
+    "rich>=15.0.0",
+    "typer>=0.26.8",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.410",
+    "ruff>=0.15.18",
+]
+
+[project.scripts]
+sb = "cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cli"]
+
+[tool.pyright]
+include = ["src"]
+pythonVersion = "3.12"
+typeCheckingMode = "strict"
+deprecateTypingAliases = true
+exclude = [".venv", "**/__pycache__", "**/node_modules", "**/.*"]
+
+reportCallInDefaultInitializer = "warning"
+reportImplicitOverride = "warning"
+reportImplicitStringConcatenation = "none"
+reportImportCycles = "warning"
+reportMissingSuperCall = "none"
+reportPropertyTypeMismatch = "warning"
+reportUninitializedInstanceVariable = "warning"
+reportUnnecessaryTypeIgnoreComment = "warning"
+reportUnreachable = "warning"
+reportUnusedCallResult = "none"
+
+reportDuplicateImport = "none"
+reportIncompatibleMethodOverride = "none"
+reportIncompatibleVariableOverride = "none"
+reportMissingTypeStubs = "none"
+
+[tool.ruff]
+src = ["src"]
+preview = false
+line-length = 125
+target-version = "py312"
+exclude = [".venv", "**/__pycache__"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN401", "BLE001", "C901", "COM812", "D100", "D104", "D203", "D212",
+    "EM101", "EM102", "ERA", "FBT001", "FBT002", "FBT003", "FIX", "ISC001",
+    "PLR0912", "PLR0915", "PLR2004", "RUF001", "RUF002", "S310", "S602",
+    "T201", "TC006", "TD", "TRY003", "T100"
+]
+unfixable = ["E501", "ERA", "RUF100"]
+flake8-quotes.inline-quotes = "double"
+flake8-annotations.allow-star-arg-any = true
+
+[tool.ruff.format]
+line-ending = "lf"
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+split-on-trailing-comma = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
