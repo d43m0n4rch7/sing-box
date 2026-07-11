@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "package_name": [
+        "com.google.android.apps.bard",
+        "com.google.android.apps.googleassistant",
+        "com.google.android.apps.labs.language.tailwind",
+        "com.google.android.apps.youtube.kids",
+        "com.google.android.apps.youtube.music",
+        "com.google.android.gms"
+      ]
+    }
+  ]
+}
