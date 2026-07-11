@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "cascadeclimbers.com",
+        "chatgpt.com",
+        "discord.com",
+        "grok.com",
+        "hetzner.com",
+        "hiddify.com",
+        "onlinesim.io",
+        "openai.com",
+        "qt.io",
+        "sentry.io",
+        "strava.com",
+        "threads.com",
+        "tuyaeu.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".cascadeclimbers.com",
+        ".chatgpt.com",
+        ".discord.com",
+        ".grok.com",
+        ".hetzner.com",
+        ".hiddify.com",
+        ".onlinesim.io",
+        ".openai.com",
+        ".qt.io",
+        ".sentry.io",
+        ".strava.com",
+        ".threads.com",
+        ".tuyaeu.com"
+      ]
+    }
+  ]
+}
