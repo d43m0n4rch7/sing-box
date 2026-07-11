@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "ai.google.dev",
+        "aistudio.google.com",
+        "gemini.google.com",
+        "geminicli.com",
+        "notebooklm.google",
+        "notebooklm.google.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".ai.google.dev",
+        ".aistudio.google.com",
+        ".appspot.com",
+        ".clients6.google.com",
+        ".gemini.google.com",
+        ".geminicli.com",
+        ".googleapis.com",
+        ".notebooklm.google",
+        ".notebooklm.google.com",
+        ".withgoogle.com"
+      ]
+    },
+    {
+      "domain_regex": ".*gemini.*"
+    }
+  ]
+}
